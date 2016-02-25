@@ -217,11 +217,11 @@ public class BackgroundMode extends CordovaPlugin {
     /**
      * Update the notification.
      */
-    private void updateNotifcation() {
+   /*  private void updateNotifcation() {
         if (isBind) {
             mService.updateNotification();
         }
-    }
+    } */
 
     /**
      * Bind the activity to a background service and put them into foreground

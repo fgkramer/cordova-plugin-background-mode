@@ -144,9 +144,9 @@ public class ForegroundService extends Service {
      *      A local ongoing notification which pending intent is bound to the
      *      main activity.
      */
-    @SuppressLint("NewApi")
-    @SuppressWarnings("deprecation")
-    private Notification makeNotification() {
+   /*  @SuppressLint("NewApi")
+    @SuppressWarnings("deprecation") */
+    /* private Notification makeNotification() {
         JSONObject settings = BackgroundMode.getSettings();
         Context context     = getApplicationContext();
         String pkgName      = context.getPackageName();
@@ -190,13 +190,13 @@ public class ForegroundService extends Service {
             // Notification for Jellybean and above
             return notification.build();
         }
-    }
+    } */
 
-    public void updateNotification() {
+   /*  public void updateNotification() {
         Notification n = makeNotification();
         NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         mNotificationManager.notify(NOTIFICATION_ID, n);
-    }
+    } */
 
     /**
      * Retrieves the resource ID of the app icon.
