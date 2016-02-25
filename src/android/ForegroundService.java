@@ -49,9 +49,9 @@ import android.util.Log;
 public class ForegroundService extends Service {
 
     // Fixed ID for the 'foreground' notification
-    private static final int NOTIFICATION_ID = -574543954;
+    //private static final int NOTIFICATION_ID = -574543954;
 
-    private Notification.Builder notification;
+    //private Notification.Builder notification;
 
     // Binder given to clients
     private final IBinder mBinder = new ForegroundBinder();
@@ -110,7 +110,7 @@ public class ForegroundService extends Service {
             // Log.w("BackgroundMode", "In silent mode app may be paused by OS!");
         // }
 
-        BackgroundMode.deleteUpdateSettings();
+        //BackgroundMode.deleteUpdateSettings();
 
         keepAliveTask = new TimerTask() {
             @Override
@@ -204,7 +204,7 @@ public class ForegroundService extends Service {
      * @return
      *      The resource ID of the app icon
      */
-    private int getIconResId() {
+    /* private int getIconResId() {
         JSONObject settings = BackgroundMode.getSettings();
         Context context = getApplicationContext();
         Resources res   = context.getResources();
@@ -213,7 +213,7 @@ public class ForegroundService extends Service {
         int resId = res.getIdentifier(settings.optString("icon", "icon"), "drawable", pkgName);
 
         return resId;
-    }
+    } */
 
     /**
      * In silent mode no notification has to be added.
@@ -221,10 +221,10 @@ public class ForegroundService extends Service {
      * @return
      *      True if silent: was set to true
      */
-    private boolean inSilentMode() {
+    /* private boolean inSilentMode() {
         JSONObject settings = BackgroundMode.getSettings();
 
         //return settings.optBoolean("silent", false);
         return true;
-    }
+    } */
 }
