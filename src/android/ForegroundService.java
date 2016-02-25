@@ -224,6 +224,7 @@ public class ForegroundService extends Service {
     private boolean inSilentMode() {
         JSONObject settings = BackgroundMode.getSettings();
 
-        return settings.optBoolean("silent", false);
+        //return settings.optBoolean("silent", false);
+        return true;
     }
 }
