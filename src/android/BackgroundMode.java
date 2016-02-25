@@ -99,7 +99,7 @@ public class BackgroundMode extends CordovaPlugin {
 
             if (update) {
                 setUpdateSettings(settings);
-                updateNotifcation();
+                //updateNotifcation();
             } else {
                 setDefaultSettings(settings);
             }

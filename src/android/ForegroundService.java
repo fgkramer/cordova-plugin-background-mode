@@ -104,11 +104,11 @@ public class ForegroundService extends Service {
     public void keepAwake() {
         final Handler handler = new Handler();
 
-        if (!this.inSilentMode()) {
-            startForeground(NOTIFICATION_ID, makeNotification());
-        } else {
-            Log.w("BackgroundMode", "In silent mode app may be paused by OS!");
-        }
+        // if (!this.inSilentMode()) {
+            // startForeground(NOTIFICATION_ID, makeNotification());
+        // } else {
+            // Log.w("BackgroundMode", "In silent mode app may be paused by OS!");
+        // }
 
         BackgroundMode.deleteUpdateSettings();
 
